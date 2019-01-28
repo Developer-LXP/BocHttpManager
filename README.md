@@ -1,11 +1,8 @@
 # BocHttpManager
 
-博采网络工具参考HKHttpManager修改而来
+博采网络工具最初原型参考HKHttpManager而来
 
-| 平台     | 账号                    | 密码            |
-| :----- | :-------------------- | :------------ |
-|  |  |  |
+设置服务器地址
+#<[BocHttpConfigure shareInstance].generalServer = @"https://www.apiopen.top/";>#
 
-| 域名 | 后台接口地址 |
-| :------------------- | :------------------- |
-| https://www.apiopen.top |   | 
+
