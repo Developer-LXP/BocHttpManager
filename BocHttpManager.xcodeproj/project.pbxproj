@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		504A3FD3A77D133AE013D750 /* libPods-BocHttpManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C39C3804324C67C2BC40330C /* libPods-BocHttpManager.a */; };
+		60A0480421FEF54500FBD5E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0480321FEF54500FBD5E3 /* AppDelegate.m */; };
+		60A0480721FEF54500FBD5E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0480621FEF54500FBD5E3 /* ViewController.m */; };
+		60A0480A21FEF54500FBD5E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A0480821FEF54500FBD5E3 /* Main.storyboard */; };
+		60A0480C21FEF54700FBD5E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A0480B21FEF54700FBD5E3 /* Assets.xcassets */; };
+		60A0480F21FEF54700FBD5E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A0480D21FEF54700FBD5E3 /* LaunchScreen.storyboard */; };
+		60A0481221FEF54700FBD5E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0481121FEF54700FBD5E3 /* main.m */; };
+		60A0482221FEF63600FBD5E3 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0482121FEF63600FBD5E3 /* NSString+Base64.m */; };
+		60A0482521FEF65A00FBD5E3 /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0482421FEF65A00FBD5E3 /* NSDictionary+JSON.m */; };
+		60A0482821FEF68B00FBD5E3 /* BocHttpConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0482721FEF68B00FBD5E3 /* BocHttpConfigure.m */; };
+		60A0482B21FEF6FA00FBD5E3 /* BocHttpLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0482A21FEF6FA00FBD5E3 /* BocHttpLogger.m */; };
+		60A0482E21FEF73400FBD5E3 /* BocHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0482D21FEF73400FBD5E3 /* BocHttpRequest.m */; };
+		60A0483221FEFAE900FBD5E3 /* BocHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0483121FEFAE900FBD5E3 /* BocHttpResponse.m */; };
+		60A0483621FEFC3900FBD5E3 /* BocHttpGroupRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0483521FEFC3900FBD5E3 /* BocHttpGroupRequest.m */; };
+		60A0483921FEFC6A00FBD5E3 /* BocHttpChainRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0483821FEFC6A00FBD5E3 /* BocHttpChainRequest.m */; };
+		60A0483C21FF009F00FBD5E3 /* BocHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0483B21FF009F00FBD5E3 /* BocHttpManager.m */; };
+		60A0483F21FF01D100FBD5E3 /* BocHttpManager+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0483E21FF01D100FBD5E3 /* BocHttpManager+Validate.m */; };
+		60A0484221FF01DC00FBD5E3 /* BocHttpManager+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0484121FF01DC00FBD5E3 /* BocHttpManager+Chain.m */; };
+		60A0484521FF01F100FBD5E3 /* BocHttpManager+Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0484421FF01F100FBD5E3 /* BocHttpManager+Group.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		60A047FF21FEF54500FBD5E3 /* BocHttpManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BocHttpManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A0480221FEF54500FBD5E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		60A0480321FEF54500FBD5E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		60A0480521FEF54500FBD5E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		60A0480621FEF54500FBD5E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		60A0480921FEF54500FBD5E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60A0480B21FEF54700FBD5E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60A0480E21FEF54700FBD5E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60A0481021FEF54700FBD5E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60A0481121FEF54700FBD5E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		60A0481E21FEF5F600FBD5E3 /* BocHttpConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BocHttpConstant.h; sourceTree = "<group>"; };
+		60A0481F21FEF61000FBD5E3 /* BocHttpManagerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BocHttpManagerHeader.h; sourceTree = "<group>"; };
+		60A0482021FEF63600FBD5E3 /* NSString+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		60A0482121FEF63600FBD5E3 /* NSString+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		60A0482321FEF65A00FBD5E3 /* NSDictionary+JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
+		60A0482421FEF65A00FBD5E3 /* NSDictionary+JSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
+		60A0482621FEF68B00FBD5E3 /* BocHttpConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BocHttpConfigure.h; sourceTree = "<group>"; };
+		60A0482721FEF68B00FBD5E3 /* BocHttpConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BocHttpConfigure.m; sourceTree = "<group>"; };
+		60A0482921FEF6FA00FBD5E3 /* BocHttpLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BocHttpLogger.h; sourceTree = "<group>"; };
+		60A0482A21FEF6FA00FBD5E3 /* BocHttpLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BocHttpLogger.m; sourceTree = "<group>"; };
+		60A0482C21FEF73400FBD5E3 /* BocHttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BocHttpRequest.h; sourceTree = "<group>"; };
+		60A0482D21FEF73400FBD5E3 /* BocHttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BocHttpRequest.m; sourceTree = "<group>"; };
+		60A0482F21FEF7F500FBD5E3 /* BocRequestInterceptorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BocRequestInterceptorProtocol.h; sourceTree = "<group>"; };
+		60A0483021FEFAE900FBD5E3 /* BocHttpResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BocHttpResponse.h; sourceTree = "<group>"; };
+		60A0483121FEFAE900FBD5E3 /* BocHttpResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BocHttpResponse.m; sourceTree = "<group>"; };
+		60A0483321FEFBFE00FBD5E3 /* BocResponseInterceptorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BocResponseInterceptorProtocol.h; sourceTree = "<group>"; };
+		60A0483421FEFC3900FBD5E3 /* BocHttpGroupRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BocHttpGroupRequest.h; sourceTree = "<group>"; };
+		60A0483521FEFC3900FBD5E3 /* BocHttpGroupRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BocHttpGroupRequest.m; sourceTree = "<group>"; };
+		60A0483721FEFC6A00FBD5E3 /* BocHttpChainRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BocHttpChainRequest.h; sourceTree = "<group>"; };
+		60A0483821FEFC6A00FBD5E3 /* BocHttpChainRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BocHttpChainRequest.m; sourceTree = "<group>"; };
+		60A0483A21FF009F00FBD5E3 /* BocHttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BocHttpManager.h; sourceTree = "<group>"; };
+		60A0483B21FF009F00FBD5E3 /* BocHttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BocHttpManager.m; sourceTree = "<group>"; };
+		60A0483D21FF01D100FBD5E3 /* BocHttpManager+Validate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BocHttpManager+Validate.h"; sourceTree = "<group>"; };
+		60A0483E21FF01D100FBD5E3 /* BocHttpManager+Validate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BocHttpManager+Validate.m"; sourceTree = "<group>"; };
+		60A0484021FF01DC00FBD5E3 /* BocHttpManager+Chain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BocHttpManager+Chain.h"; sourceTree = "<group>"; };
+		60A0484121FF01DC00FBD5E3 /* BocHttpManager+Chain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BocHttpManager+Chain.m"; sourceTree = "<group>"; };
+		60A0484321FF01F100FBD5E3 /* BocHttpManager+Group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BocHttpManager+Group.h"; sourceTree = "<group>"; };
+		60A0484421FF01F100FBD5E3 /* BocHttpManager+Group.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BocHttpManager+Group.m"; sourceTree = "<group>"; };
+		61FACCDEC711A46AF0D8F94B /* Pods-BocHttpManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BocHttpManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BocHttpManager/Pods-BocHttpManager.debug.xcconfig"; sourceTree = "<group>"; };
+		90A2DA6D8ECF1BD3E7A8F9EC /* Pods-BocHttpManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BocHttpManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-BocHttpManager/Pods-BocHttpManager.release.xcconfig"; sourceTree = "<group>"; };
+		C39C3804324C67C2BC40330C /* libPods-BocHttpManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BocHttpManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60A047FC21FEF54500FBD5E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504A3FD3A77D133AE013D750 /* libPods-BocHttpManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60A047F621FEF54500FBD5E3 = {
+			isa = PBXGroup;
+			children = (
+				60A0480121FEF54500FBD5E3 /* BocHttpManager */,
+				60A0480021FEF54500FBD5E3 /* Products */,
+				D974094303A99C7515442764 /* Pods */,
+				DCE171C2108EA9DAA666F05B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		60A0480021FEF54500FBD5E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60A047FF21FEF54500FBD5E3 /* BocHttpManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60A0480121FEF54500FBD5E3 /* BocHttpManager */ = {
+			isa = PBXGroup;
+			children = (
+				60A0481821FEF54F00FBD5E3 /* Sources */,
+				60A0480221FEF54500FBD5E3 /* AppDelegate.h */,
+				60A0480321FEF54500FBD5E3 /* AppDelegate.m */,
+				60A0480521FEF54500FBD5E3 /* ViewController.h */,
+				60A0480621FEF54500FBD5E3 /* ViewController.m */,
+				60A0480821FEF54500FBD5E3 /* Main.storyboard */,
+				60A0480B21FEF54700FBD5E3 /* Assets.xcassets */,
+				60A0480D21FEF54700FBD5E3 /* LaunchScreen.storyboard */,
+				60A0481021FEF54700FBD5E3 /* Info.plist */,
+				60A0481121FEF54700FBD5E3 /* main.m */,
+			);
+			path = BocHttpManager;
+			sourceTree = "<group>";
+		};
+		60A0481821FEF54F00FBD5E3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				60A0481E21FEF5F600FBD5E3 /* BocHttpConstant.h */,
+				60A0481F21FEF61000FBD5E3 /* BocHttpManagerHeader.h */,
+				60A0482021FEF63600FBD5E3 /* NSString+Base64.h */,
+				60A0482121FEF63600FBD5E3 /* NSString+Base64.m */,
+				60A0482321FEF65A00FBD5E3 /* NSDictionary+JSON.h */,
+				60A0482421FEF65A00FBD5E3 /* NSDictionary+JSON.m */,
+				60A0481D21FEF5CB00FBD5E3 /* configure */,
+				60A0481C21FEF5C200FBD5E3 /* logger */,
+				60A0481B21FEF5AF00FBD5E3 /* manager */,
+				60A0481A21FEF5A900FBD5E3 /* response */,
+				60A0481921FEF59800FBD5E3 /* request */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		60A0481921FEF59800FBD5E3 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				60A0482C21FEF73400FBD5E3 /* BocHttpRequest.h */,
+				60A0482D21FEF73400FBD5E3 /* BocHttpRequest.m */,
+				60A0483421FEFC3900FBD5E3 /* BocHttpGroupRequest.h */,
+				60A0483521FEFC3900FBD5E3 /* BocHttpGroupRequest.m */,
+				60A0483721FEFC6A00FBD5E3 /* BocHttpChainRequest.h */,
+				60A0483821FEFC6A00FBD5E3 /* BocHttpChainRequest.m */,
+				60A0482F21FEF7F500FBD5E3 /* BocRequestInterceptorProtocol.h */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		60A0481A21FEF5A900FBD5E3 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				60A0483021FEFAE900FBD5E3 /* BocHttpResponse.h */,
+				60A0483121FEFAE900FBD5E3 /* BocHttpResponse.m */,
+				60A0483321FEFBFE00FBD5E3 /* BocResponseInterceptorProtocol.h */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		60A0481B21FEF5AF00FBD5E3 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				60A0483A21FF009F00FBD5E3 /* BocHttpManager.h */,
+				60A0483B21FF009F00FBD5E3 /* BocHttpManager.m */,
+				60A0484321FF01F100FBD5E3 /* BocHttpManager+Group.h */,
+				60A0484421FF01F100FBD5E3 /* BocHttpManager+Group.m */,
+				60A0484021FF01DC00FBD5E3 /* BocHttpManager+Chain.h */,
+				60A0484121FF01DC00FBD5E3 /* BocHttpManager+Chain.m */,
+				60A0483D21FF01D100FBD5E3 /* BocHttpManager+Validate.h */,
+				60A0483E21FF01D100FBD5E3 /* BocHttpManager+Validate.m */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		60A0481C21FEF5C200FBD5E3 /* logger */ = {
+			isa = PBXGroup;
+			children = (
+				60A0482921FEF6FA00FBD5E3 /* BocHttpLogger.h */,
+				60A0482A21FEF6FA00FBD5E3 /* BocHttpLogger.m */,
+			);
+			path = logger;
+			sourceTree = "<group>";
+		};
+		60A0481D21FEF5CB00FBD5E3 /* configure */ = {
+			isa = PBXGroup;
+			children = (
+				60A0482621FEF68B00FBD5E3 /* BocHttpConfigure.h */,
+				60A0482721FEF68B00FBD5E3 /* BocHttpConfigure.m */,
+			);
+			path = configure;
+			sourceTree = "<group>";
+		};
+		D974094303A99C7515442764 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61FACCDEC711A46AF0D8F94B /* Pods-BocHttpManager.debug.xcconfig */,
+				90A2DA6D8ECF1BD3E7A8F9EC /* Pods-BocHttpManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DCE171C2108EA9DAA666F05B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C39C3804324C67C2BC40330C /* libPods-BocHttpManager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60A047FE21FEF54500FBD5E3 /* BocHttpManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60A0481521FEF54700FBD5E3 /* Build configuration list for PBXNativeTarget "BocHttpManager" */;
+			buildPhases = (
+				D4083DFBB1BE8E49A372B92D /* [CP] Check Pods Manifest.lock */,
+				60A047FB21FEF54500FBD5E3 /* Sources */,
+				60A047FC21FEF54500FBD5E3 /* Frameworks */,
+				60A047FD21FEF54500FBD5E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BocHttpManager;
+			productName = BocHttpManager;
+			productReference = 60A047FF21FEF54500FBD5E3 /* BocHttpManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60A047F721FEF54500FBD5E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = bocweb;
+				TargetAttributes = {
+					60A047FE21FEF54500FBD5E3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 60A047FA21FEF54500FBD5E3 /* Build configuration list for PBXProject "BocHttpManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60A047F621FEF54500FBD5E3;
+			productRefGroup = 60A0480021FEF54500FBD5E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60A047FE21FEF54500FBD5E3 /* BocHttpManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60A047FD21FEF54500FBD5E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A0480F21FEF54700FBD5E3 /* LaunchScreen.storyboard in Resources */,
+				60A0480C21FEF54700FBD5E3 /* Assets.xcassets in Resources */,
+				60A0480A21FEF54500FBD5E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D4083DFBB1BE8E49A372B92D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BocHttpManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60A047FB21FEF54500FBD5E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A0483621FEFC3900FBD5E3 /* BocHttpGroupRequest.m in Sources */,
+				60A0483221FEFAE900FBD5E3 /* BocHttpResponse.m in Sources */,
+				60A0482E21FEF73400FBD5E3 /* BocHttpRequest.m in Sources */,
+				60A0483921FEFC6A00FBD5E3 /* BocHttpChainRequest.m in Sources */,
+				60A0482221FEF63600FBD5E3 /* NSString+Base64.m in Sources */,
+				60A0482B21FEF6FA00FBD5E3 /* BocHttpLogger.m in Sources */,
+				60A0484221FF01DC00FBD5E3 /* BocHttpManager+Chain.m in Sources */,
+				60A0482521FEF65A00FBD5E3 /* NSDictionary+JSON.m in Sources */,
+				60A0480721FEF54500FBD5E3 /* ViewController.m in Sources */,
+				60A0482821FEF68B00FBD5E3 /* BocHttpConfigure.m in Sources */,
+				60A0481221FEF54700FBD5E3 /* main.m in Sources */,
+				60A0483C21FF009F00FBD5E3 /* BocHttpManager.m in Sources */,
+				60A0480421FEF54500FBD5E3 /* AppDelegate.m in Sources */,
+				60A0484521FF01F100FBD5E3 /* BocHttpManager+Group.m in Sources */,
+				60A0483F21FF01D100FBD5E3 /* BocHttpManager+Validate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		60A0480821FEF54500FBD5E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60A0480921FEF54500FBD5E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		60A0480D21FEF54700FBD5E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60A0480E21FEF54700FBD5E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60A0481321FEF54700FBD5E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		60A0481421FEF54700FBD5E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60A0481621FEF54700FBD5E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61FACCDEC711A46AF0D8F94B /* Pods-BocHttpManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NN3Q3YYA4U;
+				INFOPLIST_FILE = BocHttpManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bocweb.BocHttpManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60A0481721FEF54700FBD5E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90A2DA6D8ECF1BD3E7A8F9EC /* Pods-BocHttpManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NN3Q3YYA4U;
+				INFOPLIST_FILE = BocHttpManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bocweb.BocHttpManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60A047FA21FEF54500FBD5E3 /* Build configuration list for PBXProject "BocHttpManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60A0481321FEF54700FBD5E3 /* Debug */,
+				60A0481421FEF54700FBD5E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60A0481521FEF54700FBD5E3 /* Build configuration list for PBXNativeTarget "BocHttpManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60A0481621FEF54700FBD5E3 /* Debug */,
+				60A0481721FEF54700FBD5E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60A047F721FEF54500FBD5E3 /* Project object */;
+}
