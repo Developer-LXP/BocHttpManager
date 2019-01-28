@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BocHttpManager"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "参考HKHttpManager,对AFNetworking的二次封装，应对APP复制的网络处理."
 
   # This description is used to generate tags and improve search results.
