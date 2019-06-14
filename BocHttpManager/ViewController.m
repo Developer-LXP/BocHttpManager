@@ -17,8 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //https://www.apiopen.top/
+    //http://demo2.yunmofo.cn/ggzs/index.php/api/
+    [BocHttpConfigure shareInstance].generalServer = @"http://demo2.yunmofo.cn/ggzs/index.php/api/";
+    [BocHttpConfigure addGeneralParameter:@"authorization" value:@"token"];
+    [BocHttpConfigure addGeneralParameter:@"platform" value:@(0)];
     
-    [BocHttpConfigure shareInstance].generalServer = @"https://www.apiopen.top/";
     [self sendBasicRequest];
 //    [self sendBasicRequestTwo];
 //    [self sendBasicRequestThree];

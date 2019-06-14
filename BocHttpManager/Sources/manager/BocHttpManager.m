@@ -40,6 +40,7 @@
     }
     return self;
 }
+
 - (AFHTTPSessionManager *)sessionManager{
     if (_sessionManager == nil){
         NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -51,8 +52,9 @@
     }
     return _sessionManager;
 }
+
 - (NSString *)sendRequest:(BocHttpRequest *)request complete:(BocHttpResponseBlock)result{
-        //拦截器处理
+    //拦截器处理
     if (![self needRequestInterceptor:request]) {
         if ([BocHttpConfigure shareInstance].enableDebug) {
             NSLog(@"该请求已经取消");
@@ -62,6 +64,7 @@
     }
     return [self requestWithRequest:[request generateRequest]  complete:result];
 }
+
 - (NSString *_Nullable)sendRequestWithConfigBlock:(nonnull BocRequestConfigBlock)requestBlock complete:(nonnull BocHttpResponseBlock) result{
     BocHttpRequest *request = [BocHttpRequest new];
     requestBlock(request);
